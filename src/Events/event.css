@@ -1,0 +1,377 @@
+/* General styling */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../assets/backgroung.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Header */
+.events-header {
+    display: flex;
+    background-color: black;
+    height: 5.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.events-logo {
+    margin-top: 10px;
+    width: 9.2rem;
+    height: 4.2rem;
+}
+
+.events-title {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    margin-block-start: 0.6em;
+    
+}
+
+/* Body */
+.events-body {
+    flex-grow: 1;
+}
+
+/* Timer with description section*/
+.innovators-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.innovators-title {
+    font-size: 3.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.innovators-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.countdown-number {
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.countdown-label {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.colon {
+    font-size: 52px;
+    align-self: flex-start;
+}
+
+.register-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Scroll Down Arrow */
+.scroll-down {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.scroll-down i {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Styles for the Upcoming Events Carousel */
+
+.carousel-container {
+    max-width: 800px; /* Adjust the max width as needed */
+    margin: 2rem auto; /* Center the carousel with top and bottom margins */
+    padding: 0 1rem; /* Padding on left and right for smaller screens */
+}
+
+.carousel-content {
+    display: flex; /* Ensure the content is displayed in a horizontal line */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Prevent wrapping and maintain item size */
+    padding: 1rem; /* Padding around each carousel item */
+}
+
+/* Card styles */
+.card {
+    background-color: white; /* White background for the card */
+    border-radius: 1rem; /* More rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+    overflow: hidden; /* Hide overflow to maintain card shape */
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 1.5rem; /* Padding inside the card */
+}
+
+/* Text styles */
+.card-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-weight: 600; /* Semi-bold title */
+    color: #333; /* Dark gray color */
+}
+
+.card-date {
+    font-size: 1rem; /* Font size for the date */
+    color: #666; /* Medium gray for the date text */
+}
+
+/* Navigation buttons styles */
+.carousel-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.carousel-button:disabled {
+    opacity: 0.5; /* Dim disabled buttons */
+    cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+/* Arrow styles */
+.carousel-arrow {
+    position: absolute; /* Position arrows absolutely */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for center */
+    width: 40px; /* Width for arrow buttons */
+    height: 40px; /* Height for arrow buttons */
+}
+
+.carousel-arrow.left {
+    left: -50px; /* Position left arrow */
+}
+
+.carousel-arrow.right {
+    right: -50px; /* Position right arrow */
+}
+
+
+
+/* Upskill section */
+.upskill-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.upskill-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.upskill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.get-started-button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 10%;
+}
+
+.learn-more-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.learn-more-button .fa-solid{
+    padding-right: .6em;
+}
+
+
+/* Footer */
+.events-footer {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.footer-top {
+    display: flex;
+    margin-left: 7rem;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-logo {
+    width: 12rem;
+    height: 5.5rem;
+    margin-bottom: 70px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3,
+.footer-column-Featured h3{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-block: .6em;
+}
+
+.footer-column ul,
+.footer-column-Featured ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li,
+.footer-column-Featured li{
+    margin-bottom: 8px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    margin-left: 2rem;
+}
+
+.footer-social h3{
+    font-size: 15px;
+    margin-bottom: .4rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    width: 75%;
+    margin: 10px auto 0 auto;
+    font-size: 14px;
+}
+
+.footer-bottom p{
+    padding-left: 5rem;
+    font-size: 13px;
+}
+
+.footer-bottom-links{
+    padding-left: 3rem;
+    font-size: 13px;
+}
+
+.footer-bottom-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-language {
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

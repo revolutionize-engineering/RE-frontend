@@ -124,17 +124,18 @@
 }
 
 /* Upcoming events  style */
-.main-container-upcomingevent {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 16px;
+.slick-slider {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
 }
 
 .event-card-wrapper {
   flex: 0 0 auto;
-  width: 280px;
+  width: 280px !important;
   margin-right: 16px;
   transition: width 0.2s ease-in-out;
 }
@@ -174,9 +175,9 @@
   width: 420px;
 }
 
-/* This ensures the card container itself expands */
+/* card container itself expands */
 .event-card-wrapper:hover {
-  width: 420px;
+  width: 420px !important;
 }
 
 .img-container {
@@ -198,7 +199,7 @@
   bottom: 0;
   height: 25%;
   background: linear-gradient(to top, #feac5e, rgba(255, 255, 255, 0));
-  transition: height 0.1s ease-in-out; /* Fast ease-in and ease-out */
+  transition: height 0.1s ease-in-out;
 }
 
 .event-card-wrapper:hover .gradient-overlay {
@@ -248,8 +249,8 @@
 
 .event-card-wrapper:hover .avatar-date,
 .event-card-wrapper:hover .location-attending {
-  flex-direction: row; /* Switch to row layout on hover */
-  align-items: center; /* Align items horizontally */
+  flex-direction: row;
+  align-items: center;
 }
 
 .event-date-icon {
@@ -383,7 +384,7 @@
 
 /* Button Container */
 .buttons-container {
-  display: flex; /* Use flexbox to arrange buttons in a row */
+  display: flex;
   gap: 18px;
   padding-left: 1.2rem;
   transition: padding-left 0.1s ease-in-out;
@@ -408,14 +409,14 @@
   font-family: "Arial";
   cursor: pointer;
   transition: border 0.1s ease-in-out, box-shadow 0.1s ease-in-out,
-    margin-bottom 0.1s ease-in-out, width 0.5s ease-in-out; /* Add transition for box-shadow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    margin-bottom 0.1s ease-in-out, width 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Register-btn:hover {
   border: 1px solid grey;
   transition: 2s ease-in-out;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Learn more button */
@@ -423,7 +424,7 @@
   margin-top: 12px;
   background-color: black;
   color: white;
-  width: 58%; /* Adjust the width if necessary */
+  width: 58%;
   height: 6vh;
   padding: 8px;
   border: none;
@@ -444,10 +445,10 @@
   border: 1px solid grey;
 }
 
-/* Initially hide 'Learn More' button */
+/* Hide 'Learn More' button */
 .learn-more-btn {
-  display: none; /* Hide by default */
-  opacity: 0; /* Set initial opacity */
+  display: none;
+  opacity: 0;
   width: 53%;
   margin-right: 1rem;
   background-color: transparent;
@@ -459,12 +460,11 @@
 
 /* Show 'Learn More' button on hover */
 .event-card-wrapper:hover .learn-more-btn {
-  display: block; /* Change display to block on hover */
-  opacity: 1; /* Set opacity to 1 */
+  display: block;
+  opacity: 1;
   transform: scale(1);
 }
 
-/* Adjust button visibility and spacing */
 .event-card-wrapper:hover .Register-btn {
   margin-bottom: 0;
   width: 53%;

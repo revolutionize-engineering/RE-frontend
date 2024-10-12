@@ -3,11 +3,19 @@ import logo from '../assets/logo.png';
 import footerlogo from '../assets/footer_logo.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Button } from '../components/ui/button';
+
 import UpcomingEvents from './cards/UpcomingEvents';
 import FeaturedEvents from './cards/FeaturedEvents';
 import PreviousEvents from './cards/PreviousEvents';
 
 const Events = () => {
+    const scrollToNextComponent = () => {
+        const nextComponent = document.getElementById('next-component');
+        if (nextComponent) {
+            nextComponent.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="events-container">
             <header className="events-header">
@@ -47,11 +55,13 @@ const Events = () => {
                 </section>
 
                 {/* Arrow Down Icon */}
-                <div className="scroll-down">
+                <div className="scroll-down" onClick={scrollToNextComponent}>
                     <i className="fa fa-angle-double-down"></i>
                 </div>
 
-                <UpcomingEvents />
+                <div id="next-component">
+                    <UpcomingEvents />
+                </div>
                 <FeaturedEvents />
                 <PreviousEvents />
             </div>

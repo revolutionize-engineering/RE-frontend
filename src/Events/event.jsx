@@ -3,7 +3,9 @@ import logo from '../assets/logo.png';
 import footerlogo from '../assets/footer_logo.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Button } from '../components/ui/button';
-import UpcomingEventsCarousel from './cards/UpcomingEvents';
+import UpcomingEvents from './cards/UpcomingEvents';
+import FeaturedEvents from './cards/FeaturedEvents';
+import PreviousEvents from './cards/PreviousEvents';
 
 const Events = () => {
     return (
@@ -49,7 +51,9 @@ const Events = () => {
                     <i className="fa fa-angle-double-down"></i>
                 </div>
 
-                <UpcomingEventsCarousel />
+                <UpcomingEvents />
+                <FeaturedEvents />
+                <PreviousEvents />
             </div>
 
             <div className="upskill-section">

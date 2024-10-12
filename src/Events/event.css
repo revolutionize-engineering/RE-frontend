@@ -96,8 +96,17 @@
   border: none;
   border-radius: 8px;
   padding: 10px 30px;
-  font-size: 16px;
+  font-size: 13px;
+  border: 1px solid white;
   cursor: pointer;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border 0.4s ease-in-out;
+}
+
+.register-button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 /* Scroll Down Arrow */
@@ -133,10 +142,23 @@
   margin: 0 10px;
 }
 
+.the-events-section {
+  padding: 20px 0;
+}
+
+.the-events-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 4rem;
+  color: white;
+}
+
 .event-card-wrapper {
   flex: 0 0 auto;
   width: 280px !important;
-  margin-right: 16px;
+  /* margin-right: 16px; */
+  margin-left: 14px;
   transition: width 0.2s ease-in-out;
 }
 
@@ -182,42 +204,46 @@
 
 .img-container {
   position: absolute;
-  top: 0;
   height: 100%;
   overflow: hidden;
 }
 
 .image-card {
   width: 100%;
+  height: auto;
 }
 
 .gradient-overlay {
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 25%;
+  height: 30%;
   background: linear-gradient(to top, #feac5e, rgba(255, 255, 255, 0));
   transition: height 0.1s ease-in-out;
 }
 
 .event-card-wrapper:hover .gradient-overlay {
-  height: 50%;
+  height: 55%;
 }
 
 /* Event type badge */
 .event-type {
   display: inline-block;
   position: absolute;
-  top: 150px;
-  left: 15px;
+  top: 155px;
+  left: 10px;
   background-color: #1e83ffb9;
   color: white;
   padding: 4px 10px;
   font-size: 10px;
   border-radius: 12px;
   z-index: 1;
+}
+
+.event-card-wrapper:hover .event-type {
+    top: 172px;
 }
 
 /* Event title */
@@ -227,6 +253,10 @@
   margin-top: 9.2em;
   padding-left: 1rem;
   color: black;
+}
+
+.event-card-wrapper:hover .event-title {
+    margin-top: 10em;
 }
 
 /* Event details */
@@ -345,10 +375,14 @@
   margin-right: 1rem;
 }
 
-/* Categories*/
+/* Categories */
 .category-tags {
   padding-left: 1rem;
   padding-top: 2.3rem;
+}
+
+.event-card-wrapper:hover .category-tags {
+    padding-top: 1.3rem;
 }
 
 .category1,
@@ -415,7 +449,6 @@
 
 .Register-btn:hover {
   border: 1px solid grey;
-  transition: 2s ease-in-out;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -470,10 +503,15 @@
   width: 53%;
 }
 
+.slick-next:before,
+.slick-prev:before {
+  font-size: 25px !important;
+}
+
 /* Upskill section */
 .upskill-section {
   text-align: center;
-  margin: 20px 0;
+  margin: 6rem 0;
 }
 
 .upskill-title {
@@ -494,8 +532,17 @@
   color: black;
   border-radius: 8px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 13px;
   width: 10%;
+  border: 1px solid white;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border 0.4s ease-in-out;
+}
+
+.get-started-button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 .learn-more-button {
@@ -505,6 +552,11 @@
   border-radius: 8px;
   padding: 0 20px;
   font-size: 14px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.learn-more-button:hover {
+  background-color: black;
 }
 
 .learn-more-btn .fa-solid,

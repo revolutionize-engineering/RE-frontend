@@ -243,7 +243,7 @@
 }
 
 .event-card-wrapper:hover .event-type {
-    top: 172px;
+  top: 172px;
 }
 
 /* Event title */
@@ -256,7 +256,7 @@
 }
 
 .event-card-wrapper:hover .event-title {
-    margin-top: 10em;
+  margin-top: 10em;
 }
 
 /* Event details */
@@ -382,7 +382,7 @@
 }
 
 .event-card-wrapper:hover .category-tags {
-    padding-top: 1.3rem;
+  padding-top: 1.3rem;
 }
 
 .category1,
@@ -677,15 +677,156 @@
   font-size: 13px;
 }
 
-/* Media queries for responsiveness */
+/* Responsive styles */
 @media (max-width: 768px) {
+  .events-title {
+    font-size: 28px;
+  }
+
+  .innovators-title {
+    font-size: 2.5rem;
+  }
+
+  .innovators-description {
+    font-size: 14px;
+  }
+
+  .event-card-wrapper {
+    width: 90%;
+  }
+
+  .event-card-wrapper:hover {
+    width: 95%;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  .event-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-card {
+    height: auto;
+  }
+
   .footer-top {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
+  }
+
+  .footer-column,
+  .footer-column-Featured {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-social {
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
   }
 
   .footer-links {
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-column h3,
+  .footer-column-Featured h3 {
+    font-weight: bold;
+  }
+
+  .footer-column ul,
+  .footer-column-Featured ul {
+    padding: 0;
+  }
+
+  .footer-column li,
+  .footer-column-Featured li {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-title {
+    font-size: 24px;
+  }
+
+  .innovators-title {
+    font-size: 2rem;
+  }
+
+  .innovators-description {
+    font-size: 12px;
+  }
+
+  .event-card-wrapper {
+    width: 100%;
+  }
+
+  .event-title {
+    font-size: 1.2rem;
+  }
+
+  .event-details {
+    font-size: 12px;
+  }
+
+  .countdown-number {
+    font-size: 48px;
+  }
+
+  .countdown-label {
+    font-size: 14px;
+  }
+
+  .event-location-icon i,
+  .event-date-icon i {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .footer-bottom p {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .footer-bottom-links {
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-bottom-links a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .footer-language {
+    justify-content: center;
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .footer-links {
+    gap: 10px;
   }
 }

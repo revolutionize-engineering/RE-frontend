@@ -215,7 +215,7 @@
 
 .gradient-overlay {
   position: absolute;
-  top: 65px;
+  top: 66px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -250,13 +250,13 @@
 .event-title {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 9.2em;
+  margin-top: 9em;
   padding-left: 1rem;
   color: black;
 }
 
 .event-card-wrapper:hover .event-title {
-  margin-top: 10em;
+  margin-top: 9em;
 }
 
 /* Event details */
@@ -378,11 +378,11 @@
 /* Categories */
 .category-tags {
   padding-left: 1rem;
-  padding-top: 2.3rem;
+  padding-top: 1.3rem;
 }
 
 .event-card-wrapper:hover .category-tags {
-  padding-top: 1.3rem;
+  padding-top: 0.3rem;
 }
 
 .category1,

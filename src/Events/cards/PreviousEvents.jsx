@@ -1,7 +1,7 @@
-import { Card, CardContent } from "../../components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../../components/ui/avatar";
-import { Button } from "../../components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "../components/card";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/avatar";
+import { Button } from "../components/button";
+import { Badge } from "@/Events/components/badge";
 import Slider from "react-slick";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../../Events/event.css';
@@ -110,7 +110,7 @@ const events = [
         category1: "Data",
         category2: "AI",
         category3: "ML",
-        image: "src/assets/banner.png",
+        image: "src/Events/assets/banner.png",
     },
     {
         title: "UNI:NNOVATORS 2024",
@@ -170,7 +170,7 @@ const PreviousEvents = () => {
                             <CardContent className="cardcontent">
                                 <div className="img-container">
                                     <img
-                                        src={event.image || "src/assets/default-image.png"}
+                                        src={event.image || "src/Events/assets/default-image.png"}
                                         alt={event.title}
                                         className="image-card"
                                     />

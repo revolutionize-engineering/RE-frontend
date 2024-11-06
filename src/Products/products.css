@@ -1,0 +1,184 @@
+.start-section {
+  background-image: url("src/Products/assets/front-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content-sect {
+  max-width: 600px;
+}
+
+.content-sect h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  padding-left: 6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.content-sect p {
+  font-size: 20px;
+  padding-left: 6rem;
+  padding-right: 3rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* section 2 */
+.expound-section {
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 10rem;
+  background-color: white;
+  gap: 30px;
+  height: 100vh;
+}
+
+.sub-sect img {
+  width: 300px;
+  height: auto;
+}
+
+.sub-sect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.txt-sect {
+  padding-left: 3rem;
+  padding-right: 4rem;
+  text-align: center;
+}
+
+.txt-sect h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.txt-sect p {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 620px;
+}
+
+.learnmore-btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border 0.4s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.learnmore-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.learnmore-btn .fa-solid,
+.learnmore-btn .fa-solid {
+  padding-right: 0.6rem;
+}
+
+/* Section 3 */
+.sokobeauty-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 4rem 10rem;
+  color: white;
+  height: 100vh;
+}
+
+.sokobeauty-text {
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sokobeauty-text h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sokobeauty-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  letter-spacing: 1px;
+}
+
+.learnmore-btn-sect3 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border 0.4s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.learnmore-btn-sect3:hover {
+  background-color: white;
+  color: black;
+}
+
+.learnmore-btn-sect3 .fa-solid,
+.learnmore-btn-sect3 .fa-solid {
+  padding-right: 0.6rem;
+}
+
+.sokobeauty-heading h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.soko-white {
+  color: white;
+}
+
+.beauty-red {
+  color: red;
+}

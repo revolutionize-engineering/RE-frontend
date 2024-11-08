@@ -9,27 +9,6 @@
   background-attachment: fixed;
 }
 
-/* Header */
-.events-header {
-  display: flex;
-  background-color: black;
-  height: 5.5rem;
-  top: 0;
-}
-
-.events-logo {
-  margin-top: 10px;
-  width: 9.2rem;
-  height: 4.2rem;
-}
-
-.events-title {
-  font-size: 36px;
-  color: white;
-  font-weight: bold;
-  margin-block-start: 0.6em;
-}
-
 /* Body */
 .events-body {
   flex-grow: 1;
@@ -38,14 +17,15 @@
 /* Timer with description section*/
 .innovators-section {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   padding: 40px 20px;
   color: white;
   border-radius: 10px;
+  height: 100vh;
 }
 
 .innovators-title {
-  font-size: 3.1rem;
+  font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -112,11 +92,11 @@
 /* Scroll Down Arrow */
 .scroll-down {
   text-align: center;
-  margin-top: 40px;
+  padding-top: 8rem;
 }
 
 .scroll-down i {
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   cursor: pointer;
   animation: bounce 1.5s infinite;
@@ -510,37 +490,14 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .events-title {
-    font-size: 28px;
+  .the-events-title {
+      font-size: 1.8rem;
   }
 
-  .innovators-title {
-    font-size: 2.5rem;
-  }
-
-  .innovators-description {
-    font-size: 14px;
-  }
-
-  .event-card-wrapper {
-    width: 90%;
-  }
-
-  .event-card-wrapper:hover {
-    width: 95%;
-  }
-
-  .event-title {
-    font-size: 1.5rem;
-  }
-
-  .event-details {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .event-card {
-    height: auto;
+  .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
   }
 }
 
@@ -550,11 +507,11 @@
   }
 
   .innovators-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .innovators-description {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .event-card-wrapper {
@@ -570,7 +527,7 @@
   }
 
   .countdown-number {
-    font-size: 48px;
+    font-size: 3.5rem;
   }
 
   .countdown-label {

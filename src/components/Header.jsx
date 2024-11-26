@@ -1,6 +1,8 @@
-import React from 'react';
+
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="bg-black text-white py-4 px-8">
       <div className="flex items-center justify-between w-full">
@@ -15,19 +17,25 @@ const Header = () => {
         <nav className="hidden md:flex space-x-12">
           <a href="/" className="hover:underline">Home</a>
           <a href="/products" className="hover:underline">Products</a>
-          <a href="/services" className="hover:underline">Services</a>
+          <a href="/courses" className="hover:underline">Courses</a>
           <a href="/events" className="hover:underline">Events</a>
-          <a href="/about-us" className="hover:underline">About us</a>
+          <a href="/about" className="hover:underline">About us</a>
           <a href="/contact" className="hover:underline font-bold">Contact</a>
         </nav>
 
         {/* Buttons Section */}
         <div className="hidden md:flex space-x-4">
-          <button className="text-white border border-white px-4 py-1 rounded hover:bg-gray-700">
+          <button
+            className="text-white border border-white px-4 py-1 rounded hover:bg-gray-700"
+            onClick={() => navigate('/login')}
+          >
             Log in
           </button>
-          <button className="text-black bg-white px-4 py-1 rounded hover:bg-gray-300">
-            Get started
+          <button
+            className="text-black bg-white px-4 py-1 rounded hover:bg-gray-300"
+            onClick={() => navigate('/login')}
+          >
+             Get started
           </button>
         </div>
       </div>
